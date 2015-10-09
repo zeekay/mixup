@@ -14,10 +14,10 @@ $ npm install mixup
 
 ### Usage
 ```coffeescript
-mixup = require "mixup"
+mixup = require 'mixup'
 
 class A
-  method: -> "A"
+  method: -> 'A'
 
 class B extends A
   method: -> "B > #{super}"
@@ -26,20 +26,17 @@ class C extends A
   @classmethod: -> "C"
   method: -> "C > #{super}"
 
-class D extends C
+class D extends mixup B, C
   method: -> "D > #{super}"
 
-class E extends mixup B, C, D
-  method: -> "E > #{super}"
-
-e = new E
-console.log e.method()
-console.log E.classmethod()
+d = new D
+console.log d.method()
+console.log D.classmethod()
 ```
 
 Would output:
 
 ```
-E > D > C > A
+D > C > A
 C
 ```
