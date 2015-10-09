@@ -1,0 +1,37 @@
+{
+  "name": "mixup",
+  "description": "Fast, simple mixins for CoffeeScript.",
+  "version": "0.1.0",
+  "homepage": "http://github.com/zeekay/mixup",
+  "bugs": "http://github.com/zeekay/mixup/issues",
+  "keywords": [
+    "coffeescript",
+    "mixup",
+    "mixins",
+    "multiple inheritance"
+  ],
+  "author": "Zach Kelling <zk@monoid.io> (http://zeekay.io)",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/zeekay/mixup/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/",
+  "scripts": {
+    "prepublish": "cake build-min",
+    "test": "cake test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zeekay/mixup"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "coffee-script": "^1.9.3",
+    "executive": "^0.5.1",
+    "mocha": "^2.1.0",
+    "postmortem": "^0.1.8",
+    "shortcake": "^0.2.4"
+  }
+}
