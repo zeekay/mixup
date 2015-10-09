@@ -5,20 +5,18 @@ chain = (klass, parents=[]) ->
   parents.push parent
   chain parent, parents
 
-mixup = (base, mixins...) ->
-  class Mixed extends base
-
+mixup = (Base, mixins...) ->
   for mixin in mixins
-    # Inherit instance methods from mixed in classes
+    # Inherit instance methods/properties from mixed in classes
     for name, method of mixin::
-      Mixed::[name] = method
+      Base::[name] = method
 
-    # Inherit class methods from mixed in classes
+    # Inherit class methods/properties from mixed in classes
     for parent in chain mixin
       for name, method of parent.constructor
         unless name == '__super__'
-          Mixed[name] = method
+          Base[name] = method
 
-  Mixed
+  Base
 
 module.exports = mixup
