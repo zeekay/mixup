@@ -1,5 +1,7 @@
 ## mixup [![Build Status](https://travis-ci.org/zeekay/mixup.svg?branch=master)](https://travis-ci.org/zeekay/mixup)
 #### Mixins for CoffeeScript
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/zeekay/mixup.svg)](https://greenkeeper.io/)
 Fast, simple mixin library for CoffeeScript. Supports instance and class
 variables. Does not to do any fancy linearization or anything like that. Each
 class in a mixup clobbers previously defined methods. If you want something
