@@ -1,4 +1,7 @@
 ## mixup [![Build Status](https://travis-ci.org/zeekay/mixup.svg?branch=master)](https://travis-ci.org/zeekay/mixup)
+
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/zeekay/mixup&ref=master&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/zeekay/mixup&ref=master&action=edit)
+
 #### Mixins for CoffeeScript
 Fast, simple mixin library for CoffeeScript. Supports instance and class
 variables. Does not to do any fancy linearization or anything like that. Each
